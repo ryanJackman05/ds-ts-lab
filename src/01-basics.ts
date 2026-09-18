@@ -4,15 +4,23 @@ interface Friend {
     phone: string;
     age: number
 }
+interface Colleague {
+    name: string;
+    department: string;
+    contact: {
+        email: string;
+        extension: number;
+    };
+}
 
 
-const friend1 = {
+const friend1: Friend = {
   name: "Mark Higgins",
   phone: "087-12345",
   age: 25,
 };
 
-const friend2 = {
+const friend2: Friend = {
   name: "Patrica Njoku",
   phone: "086--12345",
   age: 31,
@@ -22,16 +30,16 @@ const friends = [friend1, friend2];
 console.log(friends[1]);
 
 //   -------------------
-const colleague1 = {
-  name: "Ralph Graham",
-  department: "Engineering",
+const colleague1: Colleague = {
+  name: "Jodio Joestar",
+  department: "Crime",
   contact: {
-    email: "rgraham@company.com",
+    email: "jstar@climbhigher.com",
     extension: 121,
   },
 };
 
-const colleague2 = {
+const colleague2: Colleague = {
   name: "John Guy",
   department: "Finance",
   contact: {
@@ -40,7 +48,7 @@ const colleague2 = {
   },
 };
 
-const colleague3 = {
+const colleague3: Colleague = {
   name: "J. Geil",
   department: "HR",
   contact: {
