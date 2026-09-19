@@ -65,3 +65,4 @@ function addInterest(f: Friend, interest: string) {
 }
 console.log("\n\nADD INTEREST")
 console.log(addInterest(friends[1], 'Politics'))
+console.log(addInterest(friends[0], 'Gaming'))
