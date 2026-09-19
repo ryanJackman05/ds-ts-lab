@@ -42,7 +42,8 @@ console.log("\n\nSORT COLLEAGUES")
 console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
 console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
 console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length))); // NEW
-
+// when using 'a-b'; if a < b, (a-b) < 0 ---> a goes before. if > 0, a goes after. [targets ASC order]
+// when using 'b-a'; if b < a, (b-a) < 0 ---> b goes before. if > 0, b goes after. [targets DESC order]
 
 function findFriends(
     friends: Friend[],
